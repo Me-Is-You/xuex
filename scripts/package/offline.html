@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智能备考平台 2027 · 离线</title>
+<style>
+  :root { --g:#3A754E; --gl:#5B9A72; --bg:#F2F7F3; --ink:#10221A; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px; }
+  .card { background:#fff; border-radius:20px; box-shadow:0 8px 40px rgba(16,34,26,.08); max-width:420px; width:100%; padding:40px 32px; text-align:center; }
+  .logo { width:72px; height:72px; margin:0 auto 20px; border-radius:20px; background:linear-gradient(135deg,var(--g),var(--gl)); display:flex; align-items:center; justify-content:center; color:#fff; font-size:30px; font-weight:700; }
+  h1 { font-size:20px; font-weight:600; margin-bottom:8px; }
+  .sub { font-size:13px; color:#5a6f62; margin-bottom:24px; }
+  .status { background:var(--bg); border-radius:12px; padding:16px; font-size:13px; line-height:1.8; text-align:left; margin-bottom:24px; }
+  .status b { color:var(--g); }
+  button { background:var(--g); color:#fff; border:0; border-radius:12px; padding:14px 36px; font-size:15px; font-weight:600; cursor:pointer; }
+  button:active { transform:scale(.97); }
+  .tip { margin-top:18px; font-size:12px; color:#8a9a8f; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">备</div>
+    <h1>智能备考平台 2027</h1>
+    <div class="sub">陕西专升本 · 数学 + 英语 · 大数据技术方向</div>
+    <div class="status">
+      <b>当前无法连接学习服务。</b><br>
+      请检查手机网络（Wi-Fi / 移动数据），确认可访问备考平台后点击下方按钮重试。<br>
+      你的学习进度保存在服务器，重连后自动同步，不会丢失。
+    </div>
+    <button onclick="location.reload()">重新连接</button>
+    <div class="tip">xuex-2027-pro · 每天 0 点更新全新题库</div>
+  </div>
+</body>
+</html>

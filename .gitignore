@@ -18,3 +18,14 @@ build/
 
 # TypeScript
 *.tsbuildinfo
+
+# Packaging artifacts (large binaries, build outputs) — 保留各自的 README
+exe/*
+!exe/README.md
+apk/*
+!apk/README.md
+.pkg/
+scripts/package/*.so
+scripts/package/*.a
+
+scripts/package/apkg
