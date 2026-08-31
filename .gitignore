@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+build/
+
+# Local data / runtime artifacts
+.pgdata/
+.pgsock/
+*.log
+.DS_Store
+
+# Env
+.env
+.env.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Packaging artifacts (large binaries, build outputs) — 保留各自的 README
+exe/*
+!exe/README.md
+apk/*
+!apk/README.md
+.pkg/
+scripts/package/*.so
+scripts/package/*.a
+
+scripts/package/apkg
