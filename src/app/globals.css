@@ -1,16 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* =====================================================================
+ * 自然绿（Natural Green / Leaf）设计令牌
+ * 取色自山间叶绿与苔原绿：主色 #3A754E，背景取晨光薄绿
+ * 全站统一映射至此令牌（原 emerald/teal 已迁移）
+ * ===================================================================== */
+@theme {
+  --color-leaf-50: #f2f7f3;
+  --color-leaf-100: #e1eee5;
+  --color-leaf-200: #c4decc;
+  --color-leaf-300: #9ac7a8;
+  --color-leaf-400: #6fab82;
+  --color-leaf-500: #4f9163;
+  --color-leaf-600: #3a754e;
+  --color-leaf-700: #2f5e40;
+  --color-leaf-800: #284c35;
+  --color-leaf-900: #223e2c;
+  --color-leaf-950: #10221a;
+}
 
 :root {
-  --foreground-rgb: 20, 40, 30;
-  --background-start-rgb: 242, 249, 245;
+  --foreground-rgb: 18, 37, 27;
+  --background-start-rgb: 242, 248, 244;
   --background-end-rgb: 255, 255, 255;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+  background: linear-gradient(180deg, rgb(var(--background-start-rgb)) 0%, rgb(var(--background-end-rgb)) 420px);
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--color-leaf-200);
+  color: var(--color-leaf-950);
 }
 
 @layer utilities {
